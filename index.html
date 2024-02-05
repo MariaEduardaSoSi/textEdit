@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://kit.fontawesome.com/d2dcb43757.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="options">
+      <button id="bold" class="option-button-format">
+        <i class="ph-bold ph-text-b"></i>
+      </button>
+      <button id="italic" class="option-button-format">
+        <i class="ph-bold ph-text-italic"></i>
+      </button>
+      <button id="underline" class="option-button format">
+        <i class="ph-bold ph-text-underline"></i>
+      </button>
+      <button id="strikethrough" class="option-button format">
+        <i class="ph-bold ph-text-strikethrough"></i>
+      </button>
+      <button id="superscript" class="opition-button script">
+        <i class="fa fa-superscript"></i>
+      </button>
+      <button id="subscript" class="option-button script">
+        <i class="fa fa-subscript"></i>
+      </button>
+      <button id="insertOderedL" class="option-button">
+        <div class="fa fa-list-ol"></div>
+      </button>
+      <button id="insertUnorderedList" class="option-button">
+        <i class="fa fa-list"></i>
+      </button>
+      <button id="undo" class="option-button">
+        <i class="fa fa-rotate-left"></i>
+      </button>
+      <button id="redo" class="option-button">
+        <i class="fa fa-rotate-right"></i>
+      </button>
+      <button id="createLink" class="adv-option-button">
+        <i class="fa fa-link"></i>
+      </button>
+      <button id="unlink" class="option-button">
+        <i class="fa fa-unlink"></i>
+      </button>
+      <button id="justfyLeft" class="option-button align">
+        <i class="fa fa-align-left"></i>
+      </button>
+      <button id="justifyCenter" class="option-button align">
+        <i class="fa fa-align-center"></i>
+      </button>
+      <button id="justifyRight" class="option-button align">
+        <i class="fa fa-align-right"></i>
+      </button>
+      <button id="justifyFull" class="option-butto align">
+        <i class="fa fa-align-justify"></i>
+      </button>
+      <button id="indent" class="option-button spacing">
+        <i class="fa fa-indent"></i>
+      </button>
+      <button id="outdent" class="option-button spacing">
+        <i class="fa fa-outdent"></i>
+      </button>
+      <select id="formatBlock" class="adv-option-button">
+        <option value="H1">H1</option>
+        <option value="H2">H2</option>
+        <option value="H3">H3</option>
+        <option value="H4">H4</option>
+        <option value="H5">H5</option>
+        <option value="H6">H6</option>
+      </select>
+      <select id="fontName" class="adv-option-button"></select>
+      <select name="" id="font-size" class="adv-option-button"></select>
+      <div class="input-wrapper">
+        <input type="color" id="foreColor" class="adv-option-button">
+        <label for="foreColor">Font Color</label>  
+      </div>
+      <div class="input-wrapper">
+        <input type="color" id="backColor" class="adv-option-button">
+        <label for="backColor">Highlight Color</label>
+      </div>
+      <div id="text-input" contenteditable="true"></div>
+    </div>
+  </div>
+</body>
+</html>
